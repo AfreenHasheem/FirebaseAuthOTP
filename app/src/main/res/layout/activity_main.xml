@@ -23,6 +23,7 @@
         android:layout_below="@+id/editTextNumber"
         android:layout_centerInParent="true"
         android:text="Send SMS"
+        android:onClick="send_sms"
         />
 
     <EditText
@@ -42,7 +43,7 @@
         android:layout_below="@+id/editTextVerificationCode"
         android:layout_centerInParent="true"
         android:text="Verify"
+        android:onClick="verify"
         />
-
 
 </RelativeLayout>
