@@ -6,7 +6,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:inputType="phone"
+        android:hint="Enter your phone number"
+        />
 
+    <Button
+        android:id="@+id/sendSMSButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumber"
+        android:layout_centerInParent="true"
+        android:text="Send SMS"
+        />
+
+    <EditText
+        android:id="@+id/editTextVerificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:inputType="phone"
+        android:hint="Enter your phone number"
+        android:layout_below="@+id/sendSMSButton"
+        />
+
+    <Button
+        android:id="@+id/sendVerificationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextVerificationCode"
+        android:layout_centerInParent="true"
+        android:text="Verify"
+        />
 
 
 </RelativeLayout>
